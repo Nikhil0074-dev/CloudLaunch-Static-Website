@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudLaunch – Static Site on the Edge</title>
+  <meta name="description" content="A responsive static website deployed to a free cloud host with CI/CD and HTTPS.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top"><img src="assets/img/logo.svg" alt="" width="32" height="32"><span>CloudLaunch</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="menu">☰</button>
+      <nav id="menu" class="menu">
+        <a href="#features">Features</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#status">Live status</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Static hosting · Edge CDN · CI/CD</p>
+          <h1>Ship fast. Serve globally. <span class="accent">Deploy on every push.</span></h1>
+          <p class="lead">This responsive site is hosted on a free cloud platform, rebuilt automatically from Git commits, and served over HTTPS from a global edge network.</p>
+          <div class="cta">
+            <a class="btn primary" href="#status">Check deployment status</a>
+            <a class="btn ghost" href="#pipeline">See the pipeline</a>
+          </div>
+        </div>
+        <img class="hero-img" src="assets/img/hero.svg" alt="Illustration of a cloud connected to servers around the globe" width="560" height="420">
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2>Why static + edge?</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="assets/img/icon-speed.svg" alt="" width="48" height="48">
+            <h3>Fast by default</h3>
+            <p>Pre-built files are cached on CDN nodes close to visitors, so pages load in milliseconds.</p>
+          </article>
+          <article class="card">
+            <img src="assets/img/icon-lock.svg" alt="" width="48" height="48">
+            <h3>Secure HTTPS</h3>
+            <p>Free, auto-renewing TLS certificates and forced HTTP→HTTPS redirects on every host.</p>
+          </article>
+          <article class="card">
+            <img src="assets/img/icon-sync.svg" alt="" width="48" height="48">
+            <h3>Continuous deployment</h3>
+            <p>Each <code>git push</code> triggers a validated build and an automatic redeploy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="pipeline">
+      <div class="container">
+        <h2>Deployment pipeline</h2>
+        <ol class="steps">
+          <li><strong>Commit</strong><span>Push changes to the <code>main</code> branch.</span></li>
+          <li><strong>Validate</strong><span>CI checks that every local asset path resolves.</span></li>
+          <li><strong>Build &amp; publish</strong><span>The host packages the static files.</span></li>
+          <li><strong>Edge</strong><span>Files propagate to the CDN, served over HTTPS.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="status">
+      <div class="container">
+        <h2>Live deployment status</h2>
+        <p class="muted">These values are read in your browser right now.</p>
+        <dl class="status" id="status-list">
+          <div><dt>Protocol</dt><dd id="st-protocol">…</dd></div>
+          <div><dt>Secure context</dt><dd id="st-secure">…</dd></div>
+          <div><dt>Host</dt><dd id="st-host">…</dd></div>
+          <div><dt>Last deployed</dt><dd id="st-deploy">…</dd></div>
+          <div><dt>Assets loaded</dt><dd id="st-assets">…</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="container narrow">
+        <h2>Get in touch</h2>
+        <form id="contact-form" novalidate>
+          <label>Name <input type="text" name="name" required autocomplete="name"></label>
+          <label>Email <input type="email" name="email" required autocomplete="email"></label>
+          <label>Message <textarea name="message" rows="4" required></textarea></label>
+          <button class="btn primary" type="submit">Send message</button>
+          <p id="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> CloudLaunch. https://github.com/Nikhil0074-dev</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
