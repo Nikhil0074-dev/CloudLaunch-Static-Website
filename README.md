@@ -1,7 +1,7 @@
 # CloudLaunch – Static Website Deployment (Cloud Hosting & Edge CDN)
 
 A responsive, dependency-free static website (HTML/CSS/JS) deployed to a free cloud host with **continuous deployment from Git**, **automatic HTTPS**, and a CI check that guarantees **no broken asset paths**.
-
+![Screenshot](1.jpeg)
 | | |
 |---|---|
 | **Live URL** | ` https://nikhil0074-dev.github.io/CloudLaunch-Static-Website/`  ← replace after deploying |
