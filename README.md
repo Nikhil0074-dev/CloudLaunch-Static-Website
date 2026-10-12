@@ -4,7 +4,7 @@ A responsive, dependency-free static website (HTML/CSS/JS) deployed to a free cl
 ![Screenshot](1.jpeg)
 | | |
 |---|---|
-| **Live URL** | ` https://nikhil0074-dev.github.io/CloudLaunch-Static-Website/`  ← replace after deploying |
+| **Live URL** | ` https://nikhil0074-dev.github.io/CloudLaunch-Static-Website/`  
 | **Primary host** | GitHub Pages (GitHub Actions) |
 
 
